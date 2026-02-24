@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cod",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "緑の音符",
+								"color": "gold",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								" ",
+								{
+									"text": "これは緑色の八分音符。",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "3000pt",
+									"color": "gold",
+									"bold": true,
+									"italic": false
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": {
+									"floats": [
+										1.25
+									]
+								},
+								"minecraft:custom_data": {
+									"PNCT": {
+										"ID": 133
+									},
+									"1FSBT": {
+										"ID": 33,
+										"CatchItem": {
+											"Rarity": "Treasure",
+											"Point": 3000
+										}
+									}
+								},
+								"minecraft:equippable": {
+									"slot": "head",
+									"equip_sound": "minecraft:item.armor.equip_diamond"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

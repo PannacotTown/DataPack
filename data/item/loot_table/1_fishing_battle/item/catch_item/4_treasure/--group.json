@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:1_fishing_battle/item/catch_item/4_treasure/asuneri",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:1_fishing_battle/item/catch_item/4_treasure/yotan_cloth",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:1_fishing_battle/item/catch_item/4_treasure/green_note",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:1_fishing_battle/item/catch_item/4_treasure/shark_peel",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}
