@@ -13,7 +13,7 @@
 							"entity": "this",
 							"name": {
 								"text": "イカ",
-								"color": "white",
+								"color": "green",
 								"italic": false
 							}
 						},
@@ -24,7 +24,7 @@
 								" ",
 								{
 									"text": "烏賊",
-									"color": "white",
+									"color":"white",
 									"italic": false
 								},
 								{

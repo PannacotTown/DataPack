@@ -13,7 +13,7 @@
 							"entity": "this",
 							"name": {
 								"text": "フグ",
-								"color": "yellow",
+								"color": "aqua",
 								"italic": false
 							}
 						},
@@ -29,7 +29,7 @@
 								},
 								{
 									"text": "120pt",
-									"color": "yellow",
+									"color": "aqua",
 									"bold": true,
 									"italic": false
 								}

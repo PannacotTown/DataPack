@@ -13,7 +13,7 @@
 							"entity": "this",
 							"name": {
 								"text": "こいもよう",
-								"color": "red",
+								"color": "light_purple",
 								"italic": false
 							}
 						},
@@ -29,7 +29,7 @@
 								},
 								{
 									"text": "1880pt",
-									"color": "red",
+									"color": "light_purple",
 									"bold": true,
 									"italic": false
 								}
