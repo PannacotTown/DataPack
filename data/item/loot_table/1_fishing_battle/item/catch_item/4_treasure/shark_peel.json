@@ -45,8 +45,11 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:custom_model_data": {
+									"strings": [
+										"FishingBattle"
+									],
 									"floats": [
-										1.26
+										26
 									]
 								},
 								"minecraft:custom_data": {
