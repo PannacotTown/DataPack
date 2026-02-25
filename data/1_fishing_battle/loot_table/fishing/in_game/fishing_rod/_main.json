@@ -48,7 +48,7 @@
 				},
                 {
 					"type": "minecraft:loot_table",
-					"value": "aa",
+					"value": "1_fishing_battle:fishing/in_game/fishing_rod/lure",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -69,7 +69,7 @@
 				},
                 {
 					"type": "minecraft:loot_table",
-					"value": "aa",
+					"value": "1_fishing_battle:fishing/in_game/fishing_rod/rich",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -90,7 +90,7 @@
 				},
                 {
 					"type": "minecraft:loot_table",
-					"value": "aa",
+					"value": "1_fishing_battle:fishing/in_game/fishing_rod/gambling",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -111,7 +111,7 @@
 				},
                 {
 					"type": "minecraft:loot_table",
-					"value": "aa",
+					"value": "1_fishing_battle:fishing/in_game/fishing_rod/slot",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
