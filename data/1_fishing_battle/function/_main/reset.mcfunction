@@ -15,6 +15,7 @@
 # storage
     data remove storage 1_fishing_battle:system System
     data remove storage 1_fishing_battle:rule Rule
+    data remove storage 1_fishing_battle:regulation Regulation
     data remove storage 1_fishing_battle:shop_price ShopPrice
     data modify storage _pannacotown_:system System.GameEvent set value "None"
 
