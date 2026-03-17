@@ -16,5 +16,4 @@
         #GameEvent: "None","FishingBattle","WerewolfRPG"
 
 # reset
-    # TreasurePondFishing
-        function 1_fishing_battle:_main/reset
+    function __core__:__main__/_reset
