@@ -26,3 +26,6 @@
 # effect
     effect clear @a saturation
     effect clear @a resistance
+
+# tag
+    tag @a remove PNCT.FSBT.Player
