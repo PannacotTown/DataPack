@@ -16,3 +16,6 @@
 # エフェクト
     effect give @a saturation infinite 0 true
     effect give @a resistance infinite 255 true
+
+# 釣竿使用回数リセット
+    execute as @a if score @s 1FSBT.Player.Used.Fishing_Rod matches 1.. run scoreboard players reset @s 1FSBT.Player.Used.Fishing_Rod

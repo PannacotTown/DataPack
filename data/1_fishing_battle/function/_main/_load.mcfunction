@@ -13,6 +13,7 @@
     scoreboard objectives add 1FSBT.System.GameTimer dummy
     scoreboard objectives add 1FSBT.Player.Score dummy
     scoreboard objectives add 1FSBT.System.Info dummy "情報"
+    scoreboard objectives add 1FSBT.Player.Used.Fishing_Rod used:fishing_rod
 
 # trigger
     scoreboard objectives add 1FSBT.Player.Achievement_Reward trigger "実績報酬"
