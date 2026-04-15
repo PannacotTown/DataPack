@@ -46,7 +46,7 @@
 						}
 					]
 				},
-                {
+				{
 					"type": "minecraft:loot_table",
 					"value": "1_fishing_battle:fishing/in_game/fishing_rod/lure",
 					"conditions": [
