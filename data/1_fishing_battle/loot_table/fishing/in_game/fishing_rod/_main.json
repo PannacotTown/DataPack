@@ -14,10 +14,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Normal"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Normal"
+												}
+											}
 										}
 									}
 								}
@@ -35,10 +37,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Double"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Double"
+												}
+											}
 										}
 									}
 								}
@@ -56,10 +60,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Lure"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Lure"
+												}
+											}
 										}
 									}
 								}
@@ -77,10 +83,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Rich"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Rich"
+												}
+											}
 										}
 									}
 								}
@@ -98,10 +106,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Gambling"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Gambling"
+												}
+											}
 										}
 									}
 								}
@@ -119,10 +129,12 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {
-											    "type" : "Slot"
-										    }
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "Slot"
+												}
+											}
 										}
 									}
 								}
@@ -158,9 +170,11 @@
 				{
 					"function": "minecraft:set_custom_data",
 					"tag": {
-						"1FSBT": {
-							"CatchItem": {
-								"Fishing_Hooked": true
+						"PNCT": {
+							"1FSBT": {
+								"CatchItem": {
+									"Fishing_Hooked": true
+								}
 							}
 						}
 					}

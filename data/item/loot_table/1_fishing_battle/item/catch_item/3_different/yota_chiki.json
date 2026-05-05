@@ -49,13 +49,12 @@
 								},
 								"minecraft:custom_data": {
 									"PNCT": {
-										"ID": 128
-									},
-									"1FSBT": {
-										"ID": 28,
-										"CatchItem": {
-											"Rarity": "Different",
-											"Point": 1500
+										"1FSBT": {
+											"ID": 28,
+											"CatchItem": {
+												"Rarity": "Different",
+												"Point": 1500
+											}
 										}
 									}
 								},
@@ -88,6 +87,12 @@
 												"text": "かもん横浜びっぐうぇい",
 												"color": "white",
 												"italic": false
+											},
+											{
+												"text": "2pt",
+												"color": "gray",
+												"bold": true,
+												"italic": false
 											}
 										],
 										"minecraft:custom_model_data": {
@@ -100,10 +105,13 @@
 										},
 										"minecraft:custom_data": {
 											"PNCT": {
-												"ID": 136
-											},
-											"1FSBT": {
-												"ID": 36
+												"1FSBT": {
+													"ID": 36,
+													"CatchItem": {
+														"Rarity": "Miss",
+														"Point": 2
+													}
+												}
 											}
 										}
 									}

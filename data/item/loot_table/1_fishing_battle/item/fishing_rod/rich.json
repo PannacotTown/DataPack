@@ -12,7 +12,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "リッチ釣竿",
+								"text": "リチE��釣竿",
                                 "color": "light_purple",
 								"italic": false
 							}
@@ -50,12 +50,11 @@
 								},
 								"minecraft:custom_data": {
 									"PNCT": {
-										"ID": 104
-									},
-									"1FSBT": {
-										"ID": 4,
-										"FishingRod": {
-											"type" : "Rich"
+										"1FSBT": {
+											"ID": 4,
+											"FishingRod": {
+												"type" : "Rich"
+											}
 										}
 									}
 								},

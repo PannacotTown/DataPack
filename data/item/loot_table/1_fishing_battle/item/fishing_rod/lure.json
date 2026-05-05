@@ -45,12 +45,11 @@
 								},
 								"minecraft:custom_data": {
 									"PNCT": {
-										"ID": 103
-									},
-									"1FSBT": {
-										"ID": 3,
-										"FishingRod": {
-											"type" : "Lure"
+										"1FSBT": {
+											"ID": 3,
+											"FishingRod": {
+												"type" : "Lure"
+											}
 										}
 									}
 								},

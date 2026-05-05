@@ -55,13 +55,12 @@
 								},
 								"minecraft:custom_data": {
 									"PNCT": {
-										"ID": 107
-									},
-									"1FSBT": {
-										"ID": 7,
-										"FishingRod": {
-											"type" : "Slot",
-											"Variant" : "10-pack"
+										"1FSBT": {
+											"ID": 7,
+											"FishingRod": {
+												"type" : "Slot",
+												"Variant" : "10-pack"
+											}
 										}
 									}
 								},

@@ -54,13 +54,12 @@
 								},
 								"minecraft:custom_data": {
 									"PNCT": {
-										"ID": 136
-									},
-									"1FSBT": {
-										"ID": 36,
-										"CatchItem": {
-											"Rarity": "Miss",
-											"Point": 2
+										"1FSBT": {
+											"ID": 36,
+											"CatchItem": {
+												"Rarity": "Miss",
+												"Point": 2
+											}
 										}
 									}
 								}

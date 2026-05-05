@@ -16,8 +16,10 @@
 									"items": "minecraft:fishing_rod",
 									"predicates": {
 										"minecraft:custom_data": {
-											"1FSBT": {
-												"FishingRod": {}
+											"PNCT": {
+												"1FSBT": {
+													"FishingRod": {}
+												}
 											}
 										}
 									}
@@ -36,8 +38,10 @@
 								"items": "minecraft:fishing_rod",
 								"predicates": {
 									"minecraft:custom_data": {
-										"1FSBT": {
-											"FishingRod": {}
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {}
+											}
 										}
 									}
 								}
