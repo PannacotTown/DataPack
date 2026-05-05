@@ -1,0 +1,362 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:written_book",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "XXX_debug_system_config_XXX",
+								"color": "dark_blue",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								" ",
+								{
+									"text": "※このアイテムはデバッグ用です。通常のプレイでは入手できません。※",
+									"color": "yellow",
+									"italic": false
+								},
+								{
+									"text": "ゲームシステムを変更する本",
+									"color": "white",
+									"italic": false
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"PNCT": {
+										"_Debug": {},
+										"1FSBT": {
+											"ID": 0.01
+										}
+									}
+								}
+							}
+						},
+						{
+							"function": "minecraft:set_written_book_pages",
+							"pages": [
+								{
+									"raw": [
+										"",
+										{
+											"text": "⚠取り扱い注意⚠",
+											"bold": true,
+											"color": "dark_red"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "※これはゲームシステムを直接操作する本です。普段の企画運行には必要ありません。",
+											"bold": true,
+											"color": "dark_red"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "むやみに操作すると、ゲームが崩壊する恐れがあります。",
+											"bold": true,
+											"color": "dark_red"
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
+											"text": "◯企画起動",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "起動する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/function 1_fishing_battle:_main/_load"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "function 1_fishing_battle:_main/_load"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯企画リセット",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "リセットする",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/function 1_fishing_battle:_main/reset"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "function 1_fishing_battle:_main/reset"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯プレイヤータグ付与",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身に付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s add PNCT.FSBT.Player"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s add PNCT.FSBT.Player"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "全員に付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @a add PNCT.FSBT.Player"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @a add PNCT.FSBT.Player"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身のタグを削除する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s remove PNCT.FSBT.Player"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s remove PNCT.FSBT.Player"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "全員のタグを削除する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @a remove PNCT.FSBT.Player"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @a remove PNCT.FSBT.Player"
+													}
+												]
+											}
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
+											"text": "◯GameState変更",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "Ready",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value Ready"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "Count",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value Count"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "Play",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value Play"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "Finish",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value Finish"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "End",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value End"
+											}
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
+											"text": "◯デバッグ用アイテム入手",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "釣竿",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/loot give @s loot item:1_fishing_battle/item/_debug/fishing_rod"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "おじガチャと同じ釣果の壊れない釣竿"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"mode": "replace_all"
+						}
+					]
+				}
+			]
+		}
+	]
+}
