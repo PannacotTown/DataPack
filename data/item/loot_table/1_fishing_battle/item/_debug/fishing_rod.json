@@ -28,7 +28,7 @@
 									"italic": false
 								},
 								{
-									"text": "おじガチャと同じ釣果",
+									"text": "おじガチャと同じ釣果の釣竿",
 									"color": "white",
 									"italic": false
 								}
@@ -40,8 +40,9 @@
 							"components": {
 								"minecraft:custom_data": {
 									"PNCT": {
+										"_Debug":{},
 										"1FSBT": {
-											"ID": 0.01,
+											"ID": 0.02,
 											"FishingRod": {
 												"type" : "_Debug"
 											}
