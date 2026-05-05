@@ -129,6 +129,41 @@
 							}
 						}
 					]
+				},
+                {
+					"type": "minecraft:loot_table",
+					"value": "1_fishing_battle:fishing/in_game/fishing_rod/slot",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": "minecraft:fishing_rod",
+								"predicates": {
+									"minecraft:custom_data": {
+										"PNCT": {
+											"1FSBT": {
+												"FishingRod": {
+													"type" : "_Debug"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					]
+				}
+			],
+			"functions": [
+				{
+					"function": "minecraft:set_custom_data",
+					"tag": {
+						"1FSBT": {
+							"CatchItem": {
+								"Fishing_Hooked": true
+							}
+						}
+					}
 				}
 			]
 		}
