@@ -1,0 +1,12 @@
+{
+	"criteria": {
+		"get_catch_item": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+			}
+		}
+	},
+	"rewards": {
+		"function": "1_fishing_battle:adv_reward/get_catch_item/"
+	}
+}
