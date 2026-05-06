@@ -12,7 +12,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "緑の音符",
+								"text": "サメの皮",
 								"color": "gold",
 								"italic": false
 							}
