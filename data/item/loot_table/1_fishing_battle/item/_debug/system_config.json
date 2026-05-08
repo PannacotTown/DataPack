@@ -84,6 +84,70 @@
 									"raw": [
 										"",
 										{
+											"text": "◯目次",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "システム関連",
+											"bold": true,
+											"underlined": true,
+											"color": "blue",
+											"click_event": {
+												"action": "change_page",
+												"page": 3
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "GameState変更",
+											"bold": true,
+											"underlined": true,
+											"color": "blue",
+											"click_event": {
+												"action": "change_page",
+												"page": 4
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "ゲーム内設定",
+											"bold": true,
+											"underlined": true,
+											"color": "blue",
+											"click_event": {
+												"action": "change_page",
+												"page": 5
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "デバッグ用アイテム",
+											"bold": true,
+											"underlined": true,
+											"color": "blue",
+											"click_event": {
+												"action": "change_page",
+												"page": 6
+											}
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
 											"text": "◯企画起動",
 											"color": "black"
 										},
