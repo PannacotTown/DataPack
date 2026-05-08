@@ -589,7 +589,7 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 3"
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 5"
 											},
 											"hover_event": {
 												"action": "show_text",
