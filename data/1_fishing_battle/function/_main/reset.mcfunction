@@ -8,6 +8,10 @@
 
 # scoreboard
     scoreboard objectives remove 1FSBT.System.GameTimer
+    scoreboard objectives remove 1FSBT.System.Time.Minute
+    scoreboard objectives remove 1FSBT.System.Time.Second
+    scoreboard objectives remove 1FSBT.System.Time.Second.Tens
+    scoreboard objectives remove 1FSBT.System.Time.Second.Ones
     scoreboard objectives remove 1FSBT.Player.Score
     scoreboard objectives remove 1FSBT.System.Info
     scoreboard objectives remove 1FSBT.Player.Achievement_Reward

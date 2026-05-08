@@ -11,6 +11,10 @@
 
 # scoreboard
     scoreboard objectives add 1FSBT.System.GameTimer dummy
+    scoreboard objectives add 1FSBT.System.Time.Minute dummy
+    scoreboard objectives add 1FSBT.System.Time.Second dummy
+    scoreboard objectives add 1FSBT.System.Time.Second.Tens dummy
+    scoreboard objectives add 1FSBT.System.Time.Second.Ones dummy
     scoreboard objectives add 1FSBT.Player.Score dummy
     scoreboard objectives add 1FSBT.System.Info dummy "情報"
     scoreboard objectives add 1FSBT.Player.Used.Fishing_Rod used:fishing_rod
