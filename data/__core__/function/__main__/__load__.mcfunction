@@ -11,6 +11,9 @@
     scoreboard objectives add PNCT.Temp dummy
     scoreboard objectives add PNCT.Player.ID dummy
 
+# 定数
+    function __core__:const
+
 # storage
     execute unless data storage _pannacotown_:system System run data modify storage _pannacotown_:system System set value {GameEvent:"None",Staff:[]}
         #GameEvent: "None","FishingBattle","WerewolfRPG"
