@@ -389,6 +389,223 @@
 									"raw": [
 										"",
 										{
+											"text": "◯ゲームモード変更",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "ScoreAttack(仮)",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.GameMode set value ScoreAttack"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "ScoreAttack(仮)"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "TimeAttack(仮)",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.GameMode set value TimeAttack"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "TimeAttack(仮)"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "UncleGacha(仮)",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.GameMode set value UncleGacha"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "UncleGacha(仮)"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯チーム設定",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "ON",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Enable set value true"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "チームON"
+													}
+												]
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "OFF",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Enable set value false"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "チームOFF"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "2",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 2"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "2チーム"
+													}
+												]
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "3",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 3"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "3チーム"
+													}
+												]
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "4",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 4"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "4チーム"
+													}
+												]
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "5",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Team.Count set value 3"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "5チーム"
+													}
+												]
+											}
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
 											"text": "◯デバッグ用アイテム入手",
 											"color": "black"
 										},
