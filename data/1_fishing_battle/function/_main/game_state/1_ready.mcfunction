@@ -28,6 +28,11 @@
 # プレイヤー数検知
     execute store result storage 1_fishing_battle:system System.Player.Count int 1 run execute if entity @a[gamemode=adventure]
 
+# プレイヤーの経験値をリセット
+    execute as @a run xp set @s 129 levels
+    execute as @a run xp set @s 1002 points
+    execute as @a run xp set @s 0 levels
+
 # bossbar
     ## 設定
         bossbar set 1_fishing_battle:game_timer visible true
