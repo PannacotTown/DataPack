@@ -16,4 +16,7 @@
         #GameEvent: "None","FishingBattle","WerewolfRPG"
 
 # reset
-    function __core__:__main__/_reset
+    ## Tempスコア
+        scoreboard players reset * PNCT.Temp
+    ## function
+        function __core__:__main__/_reset

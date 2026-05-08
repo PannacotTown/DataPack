@@ -9,6 +9,10 @@
     #define tag PNCT.FSBT.Player
     #   FSBTプレイヤータグ
 
+#> Temp storage
+# @private
+    #define storage xxx_temp_xxx/save_ranking_game_mode
+
 
 
 # survival→adventure
@@ -34,3 +38,13 @@
         #bossbar set 1_fishing_battle:game_timer name
 
 # ランキング表示操作
+    ## Tempストレージにゲームモードを保存
+        ### ScoreAttack
+            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"ScoreAttack"}
+        ### TimeAttack
+            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"TimeAttack"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"TimeAttack"}
+        ### UncleGacha
+            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"UncleGacha"}
+    
+    ## ランキング看板の表示を更新
+        function 1_fishing_battle:ranking/set_ranking_board with storage xxx_temp_xxx/save_ranking_game_mode GameMode
