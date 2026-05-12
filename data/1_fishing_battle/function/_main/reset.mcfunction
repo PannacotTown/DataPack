@@ -32,4 +32,4 @@
     effect clear @a resistance
 
 # tag
-    tag @a remove PNCT.FSBT.Player
+    tag @a remove PNCT.1FSBT.Player

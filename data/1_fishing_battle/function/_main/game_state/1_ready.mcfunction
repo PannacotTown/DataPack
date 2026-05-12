@@ -6,7 +6,7 @@
 
 #> Public tag
 # @Public
-    #define tag PNCT.FSBT.Player
+    #define tag PNCT.1FSBT.Player
     #   FSBTプレイヤータグ
 
 #> Public Score_Holder

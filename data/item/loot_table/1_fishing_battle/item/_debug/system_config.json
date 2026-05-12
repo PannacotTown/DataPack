@@ -223,13 +223,13 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/tag @s add PNCT.FSBT.Player"
+												"command": "/tag @s add PNCT.1FSBT.Player"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "tag @s add PNCT.FSBT.Player"
+														"text": "tag @s add PNCT.1FSBT.Player"
 													}
 												]
 											}
@@ -244,13 +244,13 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/tag @a add PNCT.FSBT.Player"
+												"command": "/tag @a add PNCT.1FSBT.Player"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "tag @a add PNCT.FSBT.Player"
+														"text": "tag @a add PNCT.1FSBT.Player"
 													}
 												]
 											}
@@ -265,13 +265,13 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/tag @s remove PNCT.FSBT.Player"
+												"command": "/tag @s remove PNCT.1FSBT.Player"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "tag @s remove PNCT.FSBT.Player"
+														"text": "tag @s remove PNCT.1FSBT.Player"
 													}
 												]
 											}
@@ -286,13 +286,13 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/tag @a remove PNCT.FSBT.Player"
+												"command": "/tag @a remove PNCT.1FSBT.Player"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "tag @a remove PNCT.FSBT.Player"
+														"text": "tag @a remove PNCT.1FSBT.Player"
 													}
 												]
 											}
