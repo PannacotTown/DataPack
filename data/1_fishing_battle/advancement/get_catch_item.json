@@ -3,6 +3,9 @@
 		"get_catch_item": {
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
+				"player": {
+					"nbt": "{Tags:[\"PNCT.1FSBT.Player\"]}"
+				}
 			}
 		}
 	},

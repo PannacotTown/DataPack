@@ -26,9 +26,9 @@
 
 # プレイヤータグ
     ## 付与
-        execute as @a[gamemode=adventure] run tag @s add PNCT.FSBT.Player
+        execute as @a[gamemode=adventure] run tag @s add PNCT.1FSBT.Player
     ## 削除
-        execute as @a[gamemode=!adventure] run tag @s remove PNCT.FSBT.Player
+        execute as @a[gamemode=!adventure] run tag @s remove PNCT.1FSBT.Player
 
 # プレイヤー数検知
     execute store result storage 1_fishing_battle:system System.Player.Count int 1 run execute if entity @a[gamemode=adventure]
