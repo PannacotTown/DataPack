@@ -7,4 +7,6 @@
 
 
 # gamerule
-    
+    gamerule locator_bar false
+    gamerule spawn_mobs false
+    gamerule log_admin_commands false
