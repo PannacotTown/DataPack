@@ -86,3 +86,7 @@
     
     ## ランキング看板の表示を更新
         function 1_fishing_battle:ranking/set_ranking_board with storage xxx_temp_xxx/save_ranking_game_mode GameMode
+
+# Temp削除
+    ## storage
+        data remove storage minecraft:xxx_temp_xxx/save_ranking_game_mode GameMode
