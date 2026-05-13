@@ -24,6 +24,9 @@
             execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @e[type=item] at @s if data entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.FishingRod run kill @s
         ### 実績トロフィー
 
+# チーム分け(有効時)
+    execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute if score $XXX.GameStart.Countdown PNCT.Temp matches 200 run function 1_fishing_battle:team/set_team
+
 # ゲーム開始カウントダウン10秒
     ## カウント初期化
         execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run scoreboard players set $XXX.GameStart.Countdown PNCT.Temp 200

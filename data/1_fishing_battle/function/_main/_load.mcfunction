@@ -50,14 +50,14 @@
 # Team
     team add PlayerTeamRed "赤チーム"
     team add PlayerTeamBlue "青チーム"
-    team add PlayerTeamGreen "緑チーム"
     team add PlayerTeamYellow "黄チーム"
+    team add PlayerTeamGreen "緑チーム"
     team add PlayerTeamPurple "紫チーム"
 
     team modify PlayerTeamRed color red
     team modify PlayerTeamBlue color blue
-    team modify PlayerTeamGreen color green
     team modify PlayerTeamYellow color yellow
+    team modify PlayerTeamGreen color green
     team modify PlayerTeamPurple color light_purple
     
 # bossbar
