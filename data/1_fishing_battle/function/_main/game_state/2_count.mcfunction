@@ -13,15 +13,15 @@
 # 釣果アイテムを削除
     ## 手持ち
         ### 釣果アイテム
-            execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:cod[custom_data={"PNCT":{"1FSBT":{"CatchItem":{}}}}]
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:cod[custom_data={"PNCT":{"1FSBT":{"CatchItem":{}}}}]
         ### 釣竿
-            execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:fishing_rod[custom_data={"PNCT":{"1FSBT":{"FishingRod":{}}}}]
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:fishing_rod[custom_data={"PNCT":{"1FSBT":{"FishingRod":{}}}}]
         ### 実績トロフィー
     ## ドロップ
         ### 釣果アイテム
-            execute as @e[type=item] at @s if data entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.CatchItem run kill @s
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @e[type=item] at @s if data entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.CatchItem run kill @s
         ### 釣竿
-            execute as @e[type=item] at @s if data entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.FishingRod run kill @s
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @e[type=item] at @s if data entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.FishingRod run kill @s
         ### 実績トロフィー
 
 # ゲーム開始カウントダウン10秒
@@ -59,4 +59,3 @@
 
     ## カウント減少
         execute if score $XXX.GameStart.Countdown PNCT.Temp matches 1.. run scoreboard players remove $XXX.GameStart.Countdown PNCT.Temp 1
-
