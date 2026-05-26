@@ -14,10 +14,6 @@
     #define score_holder $PNCT.1FSBT.System
     #   ゲーム全体で使用するスコアホルダー
 
-#> Temp storage
-# @private
-    #define storage xxx_temp_xxx/save_ranking_game_mode
-
 
 
 # survival→adventure
@@ -74,19 +70,3 @@
             execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha",Rank:{Enable:1b},Team:{Enable:0b}}} run bossbar set 1_fishing_battle:game_timer name {"text":"","extra":[{"text":"UncleGacha","color":"gold","bold":true},{"text":" | ","color":"dark_gray"},{"text":"時間 ","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Minute"},"color":"aqua"},{"text":":","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Tens"},"color":"aqua"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Ones"},"color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"ランク戦","color":"red","bold":true}]}
             execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha",Rank:{Enable:0b},Team:{Enable:1b}}} run bossbar set 1_fishing_battle:game_timer name {"text":"","extra":[{"text":"UncleGacha","color":"gold","bold":true},{"text":" | ","color":"dark_gray"},{"text":"時間 ","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Minute"},"color":"aqua"},{"text":":","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Tens"},"color":"aqua"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Ones"},"color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"チーム数: ","color":"green","bold":true},{"nbt":"Rule.Team.Count","storage":"1_fishing_battle:rule","color":"green","bold":true}]}
             execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha",Rank:{Enable:1b},Team:{Enable:1b}}} run bossbar set 1_fishing_battle:game_timer name {"text":"","extra":[{"text":"UncleGacha","color":"gold","bold":true},{"text":" | ","color":"dark_gray"},{"text":"時間 ","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Minute"},"color":"aqua"},{"text":":","color":"gray"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Tens"},"color":"aqua"},{"score":{"name":"$PNCT.1FSBT.System","objective":"1FSBT.System.Time.Second.Ones"},"color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"ランク戦","color":"red","bold":true},{"text":" | ","color":"dark_gray"},{"text":"チーム数: ","color":"green","bold":true},{"nbt":"Rule.Team.Count","storage":"1_fishing_battle:rule","color":"green","bold":true}]}
-
-# ランキング表示操作
-    ## Tempストレージにゲームモードを保存
-        ### ScoreAttack
-            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"ScoreAttack"}
-        ### TimeAttack
-            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"TimeAttack"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"TimeAttack"}
-        ### UncleGacha
-            execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha"}} run data modify storage xxx_temp_xxx/save_ranking_game_mode GameMode set value {game_mode:"UncleGacha"}
-    
-    ## ランキング看板の表示を更新
-        function 1_fishing_battle:ranking/set_ranking_board with storage xxx_temp_xxx/save_ranking_game_mode GameMode
-
-# Temp削除
-    ## storage
-        data remove storage minecraft:xxx_temp_xxx/save_ranking_game_mode GameMode
