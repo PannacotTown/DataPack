@@ -48,17 +48,17 @@
             #DefaultValue:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230,10SlotRod:2300}
 
 # Team
-    team add PlayerTeamRed "赤チーム"
-    team add PlayerTeamBlue "青チーム"
-    team add PlayerTeamYellow "黄チーム"
-    team add PlayerTeamGreen "緑チーム"
-    team add PlayerTeamPurple "紫チーム"
+    team add 1FSBT.Player.Team.Red "赤チーム"
+    team add 1FSBT.Player.Team.Blue "青チーム"
+    team add 1FSBT.Player.Team.Yellow "黄チーム"
+    team add 1FSBT.Player.Team.Green "緑チーム"
+    team add 1FSBT.Player.Team.Purple "紫チーム"
 
-    team modify PlayerTeamRed color red
-    team modify PlayerTeamBlue color blue
-    team modify PlayerTeamYellow color yellow
-    team modify PlayerTeamGreen color green
-    team modify PlayerTeamPurple color light_purple
+    team modify 1FSBT.Player.Team.Red color red
+    team modify 1FSBT.Player.Team.Blue color blue
+    team modify 1FSBT.Player.Team.Yellow color yellow
+    team modify 1FSBT.Player.Team.Green color green
+    team modify 1FSBT.Player.Team.Purple color light_purple
     
 # bossbar
     bossbar add 1_fishing_battle:game_timer "1_fishing_battle:game_timer"

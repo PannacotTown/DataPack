@@ -44,10 +44,10 @@
         execute as @a run xp set @s 0 levels
     ## チーム用のscoreboardをリセット
         scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
-        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
-        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
-        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
-        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Blue 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Yellow 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Green 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Purple 1FSBT.Player.Score
 
 # 時間設定
     ## 設定時間をSystemに取得
