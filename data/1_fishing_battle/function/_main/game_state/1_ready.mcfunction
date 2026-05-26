@@ -12,7 +12,13 @@
 #> Public Score_Holder
 # @Public
     #define score_holder $PNCT.1FSBT.System
-    #   ゲーム全体で使用するスコアホルダー
+        #ゲーム全体で使用するスコアホルダー
+    #define score_holder $PNCT.1FSBT.Score.Total.Red
+    #define score_holder $PNCT.1FSBT.Score.Total.Blue
+    #define score_holder $PNCT.1FSBT.Score.Total.Yellow
+    #define score_holder $PNCT.1FSBT.Score.Total.Green
+    #define score_holder $PNCT.1FSBT.Score.Total.Purple
+        #各チームの合計スコアホルダー
 
 
 
@@ -29,10 +35,19 @@
 # プレイヤー数検知
     execute store result storage 1_fishing_battle:system System.Player.Count int 1 run execute if entity @a[gamemode=adventure]
 
-# プレイヤーの経験値をリセット
-    execute as @a run xp set @s 129 levels
-    execute as @a run xp set @s 1002 points
-    execute as @a run xp set @s 0 levels
+# スコア関連
+    ## scoreboardをリセット
+        execute as @a if score @s 1FSBT.Player.Score matches 1.. run scoreboard players set @s 1FSBT.Player.Score 0
+    ## プレイヤーの経験値をリセット
+        execute as @a run xp set @s 129 levels
+        execute as @a run xp set @s 1002 points
+        execute as @a run xp set @s 0 levels
+    ## チーム用のscoreboardをリセット
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
+        scoreboard players reset $PNCT.1FSBT.Score.Total.Red 1FSBT.Player.Score
 
 # 時間設定
     ## 設定時間をSystemに取得
