@@ -24,32 +24,32 @@
 
 # カウント初期化
     ## チーム数
-        execute unless entity @a[tag=PNCT.1FSBT.Player,team=PlayerTeamRed] run execute store result score $XXX.Team_Count PNCT.Temp run data get storage 1_fishing_battle:rule Rule.Team.Count
+        execute unless entity @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Red] run execute store result score $XXX.Team_Count PNCT.Temp run data get storage 1_fishing_battle:rule Rule.Team.Count
 
 # チーム分け
     ## 振り分け 
-        execute if score $XXX.Team_Count PNCT.Temp matches 1.. run team join PlayerTeamRed @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
-        execute if score $XXX.Team_Count PNCT.Temp matches 2.. run team join PlayerTeamBlue @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
-        execute if score $XXX.Team_Count PNCT.Temp matches 3.. run team join PlayerTeamYellow @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
-        execute if score $XXX.Team_Count PNCT.Temp matches 4.. run team join PlayerTeamGreen @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
-        execute if score $XXX.Team_Count PNCT.Temp matches 5.. run team join PlayerTeamPurple @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
+        execute if score $XXX.Team_Count PNCT.Temp matches 1.. run team join 1FSBT.Player.Team.Red @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
+        execute if score $XXX.Team_Count PNCT.Temp matches 2.. run team join 1FSBT.Player.Team.Blue @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
+        execute if score $XXX.Team_Count PNCT.Temp matches 3.. run team join 1FSBT.Player.Team.Yellow @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
+        execute if score $XXX.Team_Count PNCT.Temp matches 4.. run team join 1FSBT.Player.Team.Green @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
+        execute if score $XXX.Team_Count PNCT.Temp matches 5.. run team join 1FSBT.Player.Team.Purple @r[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted]
     ## 振り分けたプレイヤーにタグ付け
-        execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamRed] run tag @s add XXXTemp_TeamSetted
-        execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamBlue] run tag @s add XXXTemp_TeamSetted
-        execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamYellow] run tag @s add XXXTemp_TeamSetted
-        execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamGreen] run tag @s add XXXTemp_TeamSetted
-        execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamPurple] run tag @s add XXXTemp_TeamSetted
+        execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Red] run tag @s add XXXTemp_TeamSetted
+        execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Blue] run tag @s add XXXTemp_TeamSetted
+        execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Yellow] run tag @s add XXXTemp_TeamSetted
+        execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Green] run tag @s add XXXTemp_TeamSetted
+        execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Purple] run tag @s add XXXTemp_TeamSetted
 
 # ループ再帰
     execute if entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run function 1_fishing_battle:team/set_team
 
 # ループ終了
     ## プレイヤーに通知
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamRed] run tellraw @s {"text":"あなたは赤チームです","color":"red"}
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamBlue] run tellraw @s {"text":"あなたは青チームです","color":"blue"}
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamYellow] run tellraw @s {"text":"あなたは黄チームです","color":"yellow"}
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamGreen] run tellraw @s {"text":"あなたは緑チームです","color":"green"}
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=PlayerTeamPurple] run tellraw @s {"text":"あなたは紫チームです","color":"light_purple"}
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Red] run tellraw @s {"text":"あなたは赤チームです","color":"red"}
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Blue] run tellraw @s {"text":"あなたは青チームです","color":"blue"}
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Yellow] run tellraw @s {"text":"あなたは黄チームです","color":"yellow"}
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Green] run tellraw @s {"text":"あなたは緑チームです","color":"green"}
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Purple] run tellraw @s {"text":"あなたは紫チームです","color":"light_purple"}
     ## Tempタグ削除
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,tag=XXXTemp_TeamSetted] run tag @s remove XXXTemp_TeamSetted
     ## Tempスコア削除
