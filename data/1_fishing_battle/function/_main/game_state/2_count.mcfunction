@@ -32,26 +32,28 @@
         execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run scoreboard players set $XXX.GameStart.Countdown PNCT.Temp 200
     ## 通知
         ### 5秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a times 0 18 2
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a title {"text":"5","color":"red","bold":true}
         ### 4秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a times 0 18 2
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a title {"text":"4","color":"gold","bold":true}
         ### 3秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a times 0 18 2
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a title {"text":"3","color":"yellow","bold":true}
         ### 2秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a times 0 18 2
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a title {"text":"2","color":"green","bold":true}
         ### 1秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a times 0 18 2
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a title {"text":"1","color":"light_purple","bold":true}
     ## ゲーム開始
+        ## 釣竿配布
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute as @a[tag=PNCT.1FSBT.Player] run loot give @s loot item:1_fishing_battle/item/fishing_rod/normal
         ## tilte時間修正
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run title @a times 10 70 20
         ## 通知
@@ -59,6 +61,8 @@
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run title @a title {"text":"GameStart!!","color":"aqua","bold":true}
         ## GameState変更
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run data modify storage 1_fishing_battle:system System.GameState set value "Play"
+        ## Temp削除
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run scoreboard players reset $XXX.GameStart.Countdown PNCT.Temp
 
     ## カウント減少
         execute if score $XXX.GameStart.Countdown PNCT.Temp matches 1.. run scoreboard players remove $XXX.GameStart.Countdown PNCT.Temp 1
