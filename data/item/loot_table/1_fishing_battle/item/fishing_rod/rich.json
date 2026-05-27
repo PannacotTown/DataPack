@@ -12,7 +12,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "リチE��釣竿",
+								"text": "リッチ釣竿",
                                 "color": "light_purple",
 								"italic": false
 							}
