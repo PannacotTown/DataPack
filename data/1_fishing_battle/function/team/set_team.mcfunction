@@ -50,10 +50,10 @@
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Yellow] run tellraw @s {"text":"あなたは黄チームです","color":"yellow"}
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Green] run tellraw @s {"text":"あなたは緑チームです","color":"green"}
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,team=1FSBT.Player.Team.Purple] run tellraw @s {"text":"あなたは紫チームです","color":"light_purple"}
-    ## Tempタグ削除
-        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,tag=XXXTemp_TeamSetted] run tag @s remove XXXTemp_TeamSetted
     ## Tempスコア削除
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run scoreboard players reset $XXX.Team_Count PNCT.Temp
+    ## Tempタグ削除
+        execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,tag=XXXTemp_TeamSetted] run tag @s remove XXXTemp_TeamSetted
 
 
 #####マルチプレイ時テスト必須
