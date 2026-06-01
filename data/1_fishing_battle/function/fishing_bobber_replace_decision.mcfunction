@@ -15,7 +15,7 @@
 
 # スコア保存
     execute store result score $XXX.Player.ID PNCT.Temp run scoreboard players get @s PNCT.Player.ID
-    execute store result score $XXX.Player.RodType PNCT.Temp run data get entity @s SelectedItem.components."minecraft:custom_data".1FSBT.ID
+    execute store result score $XXX.Player.RodType PNCT.Temp run data get entity @s SelectedItem.components."minecraft:custom_data".PNCT.1FSBT.ID
     execute store result score $XXX.Fishing_Bobber.RodType PNCT.Temp run execute as @e[type=fishing_bobber] if score @s PNCT.Player.ID = $XXX.Player.ID PNCT.Temp run data get entity @s data.RodType
 
 # 判定
