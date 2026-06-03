@@ -54,6 +54,18 @@
     ## ゲーム開始
         ## 釣竿配布
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute as @a[tag=PNCT.1FSBT.Player] run loot give @s loot item:1_fishing_battle/item/fishing_rod/normal
+        ## モード別処理
+            ### スコアアタック
+                #### 制限時間設定
+                    execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run execute store result score $PNCT.1FSBT.System 1FSBT.System.GameTimer run data get storage 1_fishing_battle:rule Rule.Timer
+            ### タイムアタック
+                #### 目標スコア設定
+                    execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"TimeAttack"}} run execute store result score $PNCT.1FSBT.System 1FSBT.Player.Score run data get storage 1_fishing_battle:rule Rule.Score
+                #### 時間設定
+                    execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"TimeAttack"}} run scoreboard players set $PNCT.1FSBT.System 1FSBT.System.GameTimer 0
+            ### おじガチャ大会
+                #### 制限時間設定
+                    execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"UncleGacha"}} run execute store result score $PNCT.1FSBT.System 1FSBT.System.GameTimer run data get storage 1_fishing_battle:rule Rule.Timer
         ## tilte時間修正
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 0 run title @a times 10 70 20
         ## 通知

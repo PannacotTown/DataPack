@@ -27,7 +27,7 @@
         data modify storage 1_fishing_battle:system System set value {GameState:"Ready",Player:{Count:0}}
             #GameState:"Ready","Count","Play","Finish","End"
     # Rule
-        data modify storage 1_fishing_battle:rule Rule set value {GameMode:"ScoreAttack",Rank:{Enable:0b},Timer:0,Team:{Enable:0b,Count:2}}
+        data modify storage 1_fishing_battle:rule Rule set value {GameMode:"ScoreAttack",Rank:{Enable:0b},Timer:0,Score:0,Team:{Enable:0b,Count:2}}
             #GameMode:"ScoreAttack","TimeAttack","UncleGacha"
     # Regulation
         data modify storage 1_fishing_battle:regulation Regulation set value {ScoreAttack:{Time:6000,RodPrice:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230,10SlotRod:2300}},TimeAttack:{Score:5000,RodPrice:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230,10SlotRod:2300}},UncleGacha:{Time:6000,RodPrice:{DoubleRod:99999,LureRod:99999,RichRod:99999,GamblingRod:99999,SlotRod:0,10SlotRod:0}}}
