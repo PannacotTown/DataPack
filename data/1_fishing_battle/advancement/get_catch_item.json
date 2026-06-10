@@ -1,14 +1,47 @@
 {
+	"parent": "1_fishing_battle:",
 	"criteria": {
 		"get_catch_item": {
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"player": {
 					"nbt": "{Tags:[\"PNCT.1FSBT.Player\"]}"
+				},
+				"item": {
+					"predicates": {
+						"custom_data": {
+							"PNCT": {
+								"1FSBT": {
+									"CatchItem":{}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"game_event_chack":{
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"1_fishing_battle:": true
+						}
+					}
 				}
 			}
 		}
 	},
+	"requirements": [
+		[
+			"get_catch_item"
+		],
+		[
+			"game_event_chack"
+		]
+	],
 	"rewards": {
 		"function": "1_fishing_battle:adv_reward/get_catch_item/"
 	}
