@@ -14,7 +14,7 @@
         ### 規定数以上でカンスト
             execute if score @s PNCT.Temp matches 524288.. run scoreboard players set @s 1FSBT.Player.Score 524288
             execute if score @s PNCT.Temp matches 524288.. run scoreboard players set @s PNCT.Temp 524288
-            execute if score @s PNCT.Temp matches 524288.. run tellraw @s ["","\n","  申し訳御座いません","\n","  現在のバージョンでは",{"text":"524288pt","bold":true,"color":"gold"},"が最大値です","\n","\n","  またこのメッセージが出た場合、MVrasameに",{"text":"  「524287が出ました。」","bold":true,"italic":true},"とお伝え頂けると幸いです。","\n"]
+            execute if score @s PNCT.Temp matches 524288.. run tellraw @s ["","\n","  申し訳御座いません","\n","  現在のバージョンでは",{"text":"524288pt","bold":true,"color":"gold"},"が最大値です","\n","\n","  またこのメッセージが出た場合、MVrasameに",{"text":"  「524288が出ました。」","bold":true,"italic":true},"とお伝え頂けると幸いです。","\n"]
         ### レベルを増加
             execute if score @s PNCT.Temp matches 262144.. run xp add @s 262144 levels
             execute if score @s PNCT.Temp matches 262144.. run scoreboard players remove @s PNCT.Temp 262144
