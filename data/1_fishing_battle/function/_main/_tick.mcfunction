@@ -13,6 +13,9 @@
     execute if data storage 1_fishing_battle:system {System:{GameState:"Finish"}} run function 1_fishing_battle:_main/game_state/4_finish
     execute if data storage 1_fishing_battle:system {System:{GameState:"End"}} run function 1_fishing_battle:_main/game_state/5_end
 
+# System用advancement達成
+    execute as @a[advancements={1_fishing_battle:=false}] run advancement grant @a only 1_fishing_battle:
+
 # 経験値オーブ削除
     execute as @e[type=experience_orb] run kill @s
 

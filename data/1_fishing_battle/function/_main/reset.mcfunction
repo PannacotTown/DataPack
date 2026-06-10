@@ -6,6 +6,9 @@
 
 
 
+# advancement
+    advancement revoke @a only 1_fishing_battle:
+
 # scoreboard
     scoreboard objectives remove 1FSBT.System.GameTimer
     scoreboard objectives remove 1FSBT.System.Time.Minute

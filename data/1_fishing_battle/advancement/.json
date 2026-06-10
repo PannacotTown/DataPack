@@ -1,0 +1,7 @@
+{
+	"criteria": {
+		"fishing_battle": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
