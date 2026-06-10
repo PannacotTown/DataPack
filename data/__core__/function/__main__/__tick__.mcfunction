@@ -13,3 +13,6 @@
 # voidkill
     execute as @e if predicate __core__:-500_void_kill run say kill
     execute as @e if predicate __core__:-500_void_kill run kill @s
+
+# リセット
+    execute unless entity @a run function __core__:__main__/_reset
