@@ -44,8 +44,8 @@
             execute unless data storage 1_fishing_battle:save/ranking Ranking.Team.TimeAttack run data modify storage 1_fishing_battle:save/ranking Ranking.Team.TimeAttack set value {1:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0},2:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0},3:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0},4:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0},5:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0},6:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Time:0}}
             execute unless data storage 1_fishing_battle:save/ranking Ranking.Team.UncleGacha run data modify storage 1_fishing_battle:save/ranking Ranking.Team.UncleGacha set value {1:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0},2:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0},3:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0},4:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0},5:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0},6:{Color:"null",Player:[{Name:null,UUID:[I; 0, 0, 0, 0]}],Score:0}}
     # ShopPrice
-        data modify storage 1_fishing_battle:shop_price ShopPrice set value {FishingRod:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230,10SlotRod:2300}}
-            #DefaultValue:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230,10SlotRod:2300}
+        data modify storage 1_fishing_battle:shop_price ShopPrice set value {FishingRod:{Double:15,Lure:70,Rich:160,Gambling:180,Slot:230}}
+            #DefaultValue:{Double:15,Lure:70,Rich:160,Gambling:180,Slot:230}
 
 # Team
     team add 1FSBT.Player.Team.Red "赤チーム"

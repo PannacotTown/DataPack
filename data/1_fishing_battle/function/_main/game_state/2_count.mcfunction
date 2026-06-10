@@ -27,6 +27,20 @@
 # チーム分け(有効時)
     execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute if score $XXX.GameStart.Countdown PNCT.Temp matches 200 run function 1_fishing_battle:team/set_team
 
+# ショップ
+    ## ダブル釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=3.5,y=0,z=21.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Double"}}}}}] data.PNCT.1FSBT.Shop.Price int 1 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Double
+    ## 入れ食い釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=3.5,y=0,z=18.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Lure"}}}}}] data.PNCT.1FSBT.Shop.Price int 1 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Lure
+    ## リッチ釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=7.5,y=0,z=15.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Rich"}}}}}] data.PNCT.1FSBT.Shop.Price int 1 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Rich
+    ## 博打釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=11.5,y=0,z=15.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Gambling"}}}}}] data.PNCT.1FSBT.Shop.Price int 1 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Gambling
+    ## おじガチャ釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=14.5,y=0,z=17.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot"}}}}}] data.PNCT.1FSBT.Shop.Price int 1 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Slot
+    ## 10連おじガチャ釣竿
+        execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute store result entity @n[type=villager,x=14.5,y=0,z=18.5,nbt={data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot-10"}}}}}] data.PNCT.1FSBT.Shop.Price int 10 run data get storage 1_fishing_battle:shop_price ShopPrice.FishingRod.Slot
+
 # ゲーム開始カウントダウン10秒
     ## カウント初期化
         execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run scoreboard players set $XXX.GameStart.Countdown PNCT.Temp 200
