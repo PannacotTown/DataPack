@@ -13,8 +13,10 @@
         execute as @a[tag=PNCT.1FSBT.Player] run function 1_fishing_battle:score/ctrl_xpbar
 
 # モード別処理
-    ## スコアアタック・おじガチャ大会
+    ## スコアアタック
+        execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run function 1_fishing_battle:game_mode/score_attack/play
     ## タイムアタック
+    ## おじガチャ大会
 
 # 釣竿処理
     ## 釣竿の浮き初期設定
