@@ -14,7 +14,8 @@
 							"name": {
 								"text": "XXX_debug_system_config_XXX",
 								"color": "dark_blue",
-								"italic": false
+								"italic": false,
+								"shadow_color": 0
 							}
 						},
 						{
@@ -140,6 +141,37 @@
 											"click_event": {
 												"action": "change_page",
 												"page": 6
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "ゲームスタート",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:system System.GameState set value Count"
 											}
 										}
 									]
@@ -399,9 +431,6 @@
 											"text": "\n"
 										},
 										{
-											"text": "\n"
-										},
-										{
 											"text": "ScoreAttack(仮)",
 											"bold": true,
 											"underlined": true,
@@ -475,9 +504,6 @@
 											"text": "\n"
 										},
 										{
-											"text": "\n"
-										},
-										{
 											"text": "ON",
 											"bold": true,
 											"underlined": true,
@@ -515,9 +541,6 @@
 													}
 												]
 											}
-										},
-										{
-											"text": "\n"
 										},
 										{
 											"text": "\n"
@@ -601,6 +624,55 @@
 														"text": "5チーム"
 													}
 												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯制限時間",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "10秒",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Timer set value 200"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "1分",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Timer set value 1200"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "100分",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/data modify storage 1_fishing_battle:rule Rule.Timer set value 120000"
 											}
 										}
 									]
