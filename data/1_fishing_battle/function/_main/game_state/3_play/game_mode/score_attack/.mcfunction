@@ -12,13 +12,17 @@
     ## GameState変更
         execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run data modify storage 1_fishing_battle:system System.GameState set value "Finish"
 
+execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run say *debug*_finish
+
 # 制限時間
     ## 表示
         ### 計算
             #### 分秒に計算
                 scoreboard players operation $PNCT.1FSBT.System 1FSBT.System.Time.Minute = $PNCT.1FSBT.System 1FSBT.System.GameTimer
+                scoreboard players add $PNCT.1FSBT.System 1FSBT.System.Time.Minute 19
                 scoreboard players operation $PNCT.1FSBT.System 1FSBT.System.Time.Minute /= #1200 PNCT.Const
                 scoreboard players operation $PNCT.1FSBT.System 1FSBT.System.Time.Second = $PNCT.1FSBT.System 1FSBT.System.GameTimer
+                scoreboard players add $PNCT.1FSBT.System 1FSBT.System.Time.Second 19
                 scoreboard players operation $PNCT.1FSBT.System 1FSBT.System.Time.Second %= #1200 PNCT.Const
                 scoreboard players operation $PNCT.1FSBT.System 1FSBT.System.Time.Second /= #20 PNCT.Const
             #### 秒を2桁表示に計算
