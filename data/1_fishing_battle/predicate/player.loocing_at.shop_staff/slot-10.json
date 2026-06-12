@@ -1,0 +1,24 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:player",
+		"type_specific": {
+			"type": "minecraft:player",
+			"looking_at": {
+				"type": "minecraft:villager",
+				"nbt": {
+					"data": {
+						"PNCT": {
+							"1FSBT": {
+								"Shop": {
+									"FishingRod": "Slot-10"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

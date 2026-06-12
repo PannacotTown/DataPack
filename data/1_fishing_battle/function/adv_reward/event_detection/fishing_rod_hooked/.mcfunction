@@ -24,4 +24,4 @@
     schedule function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handling_catch_item 0.6t
 
 # debug msg
-    tellraw MVrasame {translate:"*debug* %s",with:[{text:"Finish"}]}
+    tellraw MVrasame {translate:"*debug* %s",with:[{text:"Fishing_Rod_Hooked"}]}
