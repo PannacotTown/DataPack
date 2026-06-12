@@ -120,7 +120,7 @@
 											"text": "\n"
 										},
 										{
-											"text": "ゲーム内設定",
+											"text": "ルール設定",
 											"bold": true,
 											"underlined": true,
 											"color": "blue",
@@ -238,27 +238,6 @@
 											"text": "\n"
 										},
 										{
-											"text": "全員に付与する",
-											"bold": true,
-											"underlined": true,
-											"color": "red",
-											"click_event": {
-												"action": "run_command",
-												"command": "/tag @a add PNCT.1FSBT.Player"
-											},
-											"hover_event": {
-												"action": "show_text",
-												"value": [
-													{
-														"text": "tag @a add PNCT.1FSBT.Player"
-													}
-												]
-											}
-										},
-										{
-											"text": "\n"
-										},
-										{
 											"text": "自身のタグを削除する",
 											"bold": true,
 											"underlined": true,
@@ -272,6 +251,30 @@
 												"value": [
 													{
 														"text": "tag @s remove PNCT.1FSBT.Player"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "全員に付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @a add PNCT.1FSBT.Player"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @a add PNCT.1FSBT.Player"
 													}
 												]
 											}
@@ -628,6 +631,143 @@
 														"text": "おじガチャと同じ釣果の壊れない釣竿"
 													}
 												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯自身スコア操作",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "0pt",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set @s 1FSBT.Player.Score 0"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "99999pt",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set @s 1FSBT.Player.Score 99999"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "+1000pt",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players add @s 1FSBT.Player.Score 1000"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯制限時間操作",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "0秒",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set $PNCT.1FSBT.System 1FSBT.System.GameTimer 0"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "5秒",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set $PNCT.1FSBT.System 1FSBT.System.GameTimer 100"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "15秒",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set $PNCT.1FSBT.System 1FSBT.System.GameTimer 300"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "100分",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players set $PNCT.1FSBT.System 1FSBT.System.GameTimer 120000"
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "+10秒",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players add $PNCT.1FSBT.System 1FSBT.System.GameTimer 200"
+											}
+										},
+										{
+											"text": "  "
+										},
+										{
+											"text": "+1分",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/scoreboard players add $PNCT.1FSBT.System 1FSBT.System.GameTimer 1200"
 											}
 										}
 									]
