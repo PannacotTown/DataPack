@@ -12,8 +12,6 @@
     ## GameState変更
         execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run data modify storage 1_fishing_battle:system System.GameState set value "Finish"
 
-execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run say *debug*_finish
-
 # 制限時間
     ## 表示
         ### 計算
@@ -38,4 +36,5 @@ execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run say *de
     ## 減少
         execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 1.. run scoreboard players remove $PNCT.1FSBT.System 1FSBT.System.GameTimer 1
 
-# 終了
+# debug msg
+    execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run tellraw MVrasame {translate:"*debug* %s",with:[{text:"Finish"}]}

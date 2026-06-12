@@ -64,4 +64,5 @@
 # タグを削除
     tag @a[tag=XXXTemp_GetCatchItem] remove XXXTemp_GetCatchItem
 
-say *debug*_score
+# debug msg
+    tellraw MVrasame {translate:"*debug* %s",with:[{text:"handling_catch_item"}]}

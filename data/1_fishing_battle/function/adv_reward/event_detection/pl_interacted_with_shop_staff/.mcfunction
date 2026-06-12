@@ -18,5 +18,5 @@
     execute if data storage 1_fishing_battle:system {System:{GameState:"Ready"}} run function 1_fishing_battle:adv_reward/event_detection/pl_interacted_with_shop_staff/game_state/1_ready
     execute if data storage 1_fishing_battle:system {System:{GameState:"Play"}}
 
-
-say *debug*_interact_villager
+# debug msg
+    tellraw MVrasame {translate:"*debug* %s",with:[{text:"Interact_Shop_Staff"}]}

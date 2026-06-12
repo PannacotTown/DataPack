@@ -23,4 +23,5 @@
 # 0.6t後に、functionを実行
     schedule function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handling_catch_item 0.6t
 
-say *debug*_hit
+# debug msg
+    tellraw MVrasame {translate:"*debug* %s",with:[{text:"Finish"}]}

@@ -21,4 +21,6 @@
     execute if predicate 1_fishing_battle:player.loocing_at.shop_staff/gambling run tellraw @s [""," [店員] ","りっちょく！"]
     execute if predicate 1_fishing_battle:player.loocing_at.shop_staff/slot run tellraw @s [""," [店員] ","ただのおじさんです。本当にただのおじさんです。"]
 
-say *debug*_talk
+
+# degub msg
+    tellraw MVrasame {translate:"*debug* %s",with:[{text:"talk"}]}
