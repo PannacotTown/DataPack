@@ -5,7 +5,13 @@
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"player": {
-					"nbt": "{Tags:[\"PNCT.1FSBT.Player\"]}"
+					"nbt": "{Tags:[\"PNCT.1FSBT.Player\"]}",
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"1_fishing_battle:": true
+						}
+					}
 				},
 				"item": {
 					"predicates": {
@@ -19,29 +25,8 @@
 					}
 				}
 			}
-		},
-		"game_event_chack":{
-			"trigger": "minecraft:tick",
-			"conditions": {
-				"player": {
-					"type_specific": {
-						"type": "player",
-						"advancements": {
-							"1_fishing_battle:": true
-						}
-					}
-				}
-			}
 		}
 	},
-	"requirements": [
-		[
-			"get_catch_item"
-		],
-		[
-			"game_event_chack"
-		]
-	],
 	"rewards": {
 		"function": "1_fishing_battle:adv_reward/get_catch_item/"
 	}
