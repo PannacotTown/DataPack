@@ -1,9 +1,9 @@
-#> __core__:adv_reward/first_login
+#> __core__:adv_reward/event_detection/first_login
 #
-# __core__：ワールド入室時に達成するAdvancementの報酬
+# __core__：advacement報酬/ワールド入室時
 #
-# @within advancement __core__:first_login
-# @within function __core__:adv_reward/first_login
+# @within advancement __core__:event_detection/first_login
+# @within function __core__:adv_reward/event_detection/first_login
 
 #> ScoreHolder
 # @private
@@ -18,7 +18,7 @@
     ## PlayerID増加
         execute if score $XXX.PlayerID_Controler PNCT.Player.ID matches 0 run execute store result score $XXX.PlayerID_Controler PNCT.Player.ID run random value 1..65535
     ## 同IDが存在したらやり直し
-        execute as @a if score $XXX.PlayerID_Controler PNCT.Player.ID = @s PNCT.Player.ID run return run function __core__:adv_reward/first_login
+        execute as @a if score $XXX.PlayerID_Controler PNCT.Player.ID = @s PNCT.Player.ID run return run function __core__:adv_reward/event_detection/first_login
     ## 同IDが存在しなかったら、設定
         execute as @a unless score $XXX.PlayerID_Controler PNCT.Player.ID = @s PNCT.Player.ID run execute as @a[scores={PNCT.Player.ID=-1}] run scoreboard players operation @s PNCT.Player.ID = $XXX.PlayerID_Controler PNCT.Player.ID
     ## scoreboardをリセット

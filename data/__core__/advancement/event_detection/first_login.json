@@ -10,6 +10,6 @@
 		}
 	},
 	"rewards": {
-		"function": "__core__:adv_reward/first_login"
+		"function": "__core__:adv_reward/event_detection/first_login"
 	}
 }

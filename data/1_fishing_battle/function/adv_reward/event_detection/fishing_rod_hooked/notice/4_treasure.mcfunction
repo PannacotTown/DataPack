@@ -1,8 +1,8 @@
-#> 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/4_treasure
+#> 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/notice/4_treasure
 #
 # FishingBattle：宝の通知function
 # 
-# @within function 1_fishing_battle:adv_reward/fishing_rod_hooked/handleing_catch_item
+# @within function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handleing_catch_item
 
 
 

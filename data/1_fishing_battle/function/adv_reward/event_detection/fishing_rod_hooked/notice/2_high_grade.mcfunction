@@ -1,8 +1,8 @@
-#> 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/2_high_grade
+#> 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/notice/2_high_grade
 #
 # FishingBattle：高級魚の通知function
 # 
-# @within function 1_fishing_battle:adv_reward/fishing_rod_hooked/handleing_catch_item
+# @within function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handleing_catch_item
 
 
 

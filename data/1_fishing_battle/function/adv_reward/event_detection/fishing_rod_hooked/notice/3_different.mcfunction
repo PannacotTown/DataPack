@@ -1,8 +1,8 @@
-#> 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/3_different
+#> 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/notice/3_different
 #
 # FishingBattle：異種の通知function
 # 
-# @within function 1_fishing_battle:adv_reward/fishing_rod_hooked/handleing_catch_item
+# @within function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handleing_catch_item
 
 
 

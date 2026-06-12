@@ -28,6 +28,6 @@
 		}
 	},
 	"rewards": {
-		"function": "1_fishing_battle:adv_reward/fishing_rod_hooked/"
+		"function": "1_fishing_battle:adv_reward/event_detection/event_detection/event_detection/fishing_rod_hooked/"
 	}
 }

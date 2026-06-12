@@ -1,4 +1,4 @@
-#> 1_fishing_battle:adv_reward/pl_interacted_with_shop_staff/
+#> 1_fishing_battle:adv_reward/event_detection/pl_interacted_with_shop_staff/
 #
 # FishingBattle：advacement報酬/村人を右クリックした時
 # 
