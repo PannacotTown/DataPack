@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"player_interact_with_shop_staff": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"advancements": {
+							"1_fishing_battle:" : true
+						}
+					}
+				},
+				"entity": {
+					"type": "minecraft:villager",
+					"nbt": {
+						"data": {
+							"PNCT": {
+								"1FSBT": {
+									"Shop": {}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "1_fishing_battle:adv_reward/pl_interacted_with_shop_staff/"
+	}
+}
