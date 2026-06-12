@@ -88,4 +88,4 @@
             summon villager 14.5 0 18.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[90F,0F],CustomName:{"color":"gold","italic":false,"text":"10連おじガチャ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot-10",Price:0}}}}}
 
 # 通知
-    say TPF
+    say *debug*_TPF

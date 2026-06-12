@@ -11,7 +11,7 @@
         execute if data storage _pannacotown_:system {System:{GameEvent:"FishingBattle"}} run function 1_fishing_battle:_main/_tick
 
 # voidkill
-    execute as @e if predicate __core__:-500_void_kill run say kill
+    execute as @e if predicate __core__:-500_void_kill run say *debug*_kill
     execute as @e if predicate __core__:-500_void_kill run kill @s
 
 # リセット

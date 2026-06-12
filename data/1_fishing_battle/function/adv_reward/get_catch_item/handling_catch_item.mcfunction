@@ -22,8 +22,6 @@
 
 
 
-say handling_catch_item
-
 # 釣ったアイテムがない場合、タグを削除して終了
     execute unless entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}}] run return run tag @a[tag=XXXTemp_GetCatchItem] remove XXXTemp_GetCatchItem
 
@@ -65,3 +63,5 @@ say handling_catch_item
 
 # タグを削除
     tag @a[tag=XXXTemp_GetCatchItem] remove XXXTemp_GetCatchItem
+
+say *debug*_score

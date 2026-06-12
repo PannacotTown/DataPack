@@ -11,8 +11,6 @@
 
 
 
-say get_catch_item
-
 # advancementを削除
     advancement revoke @s only 1_fishing_battle:get_catch_item
 
@@ -23,4 +21,6 @@ say get_catch_item
     tag @s add XXXTemp_GetCatchItem
 
 # 0.6t後に、functionを実行
-    execute as @s at @s run schedule function 1_fishing_battle:adv_reward/get_catch_item/handling_catch_item 0.6t
+    schedule function 1_fishing_battle:adv_reward/get_catch_item/handling_catch_item 0.6t
+
+say *debug*_hit
