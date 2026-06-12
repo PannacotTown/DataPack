@@ -1,4 +1,4 @@
-#> item:1_fishing_battle/give
+#> item:1_fishing_battle/give.m
 #
 # item：1_fishing_battleのアイテムの入手
 #
