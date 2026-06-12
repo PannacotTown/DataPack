@@ -1,8 +1,8 @@
-#> 1_fishing_battle:adv_reward/get_catch_item/notice/1_common
+#> 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/1_common
 #
 # FishingBattle：一般魚の通知function
 # 
-# @within function 1_fishing_battle:adv_reward/get_catch_item/handleing_catch_item
+# @within function 1_fishing_battle:adv_reward/fishing_rod_hooked/handleing_catch_item
 
 
 

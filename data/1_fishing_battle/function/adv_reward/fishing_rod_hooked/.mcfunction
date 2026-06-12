@@ -1,8 +1,8 @@
-#> 1_fishing_battle:adv_reward/get_catch_item/
+#> 1_fishing_battle:adv_reward/fishing_rod_hooked/
 #
-# FishingBattle：釣った時のadvacementの報酬
+# FishingBattle：advacement報酬/釣った時
 # 
-# @within advancement 1_fishing_battle:get_catch_item
+# @within advancement 1_fishing_battle:fishing_rod_hooked
 
 #> Temp Tag
 # @private
@@ -12,7 +12,7 @@
 
 
 # advancementを削除
-    advancement revoke @s only 1_fishing_battle:get_catch_item
+    advancement revoke @s only 1_fishing_battle:fishing_rod_hooked
 
 # ゲーム中でない場合、終了
     execute unless data storage 1_fishing_battle:system {System:{GameState:"Play"}} run return fail
@@ -21,6 +21,6 @@
     tag @s add XXXTemp_GetCatchItem
 
 # 0.6t後に、functionを実行
-    schedule function 1_fishing_battle:adv_reward/get_catch_item/handling_catch_item 0.6t
+    schedule function 1_fishing_battle:adv_reward/fishing_rod_hooked/handling_catch_item 0.6t
 
 say *debug*_hit

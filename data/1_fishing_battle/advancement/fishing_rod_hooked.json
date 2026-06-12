@@ -1,7 +1,7 @@
 {
 	"parent": "1_fishing_battle:",
 	"criteria": {
-		"get_catch_item": {
+		"fishing_rod_hooked": {
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"player": {
@@ -28,6 +28,6 @@
 		}
 	},
 	"rewards": {
-		"function": "1_fishing_battle:adv_reward/get_catch_item/"
+		"function": "1_fishing_battle:adv_reward/fishing_rod_hooked/"
 	}
 }

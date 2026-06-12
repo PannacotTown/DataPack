@@ -1,13 +1,13 @@
-#> 1_fishing_battle:adv_reward/get_catch_item/handleing_catch_item
+#> 1_fishing_battle:adv_reward/fishing_rod_hooked/handleing_catch_item
 #
 # FishingBattle：釣ったゲームアイテムの操作
 #
-# @within function 1_fishing_battle:adv_reward/get_catch_item/
+# @within function 1_fishing_battle:adv_reward/fishing_rod_hooked/
 
 #> Temp Holder
 # @within 
-#   function 1_fishing_battle:adv_reward/get_catch_item/handling_catch_item
-#   function 1_fishing_battle:adv_reward/get_catch_item/notice/**
+#   function 1_fishing_battle:adv_reward/fishing_rod_hooked/handling_catch_item
+#   function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/**
     #define score_holder $XXX.GetCatchItem_Score PNCT.Temp
         # 釣ったアイテムのポイントを一時的に保存するスコア
 
@@ -45,15 +45,15 @@
 
 # 通知
     ## Common
-        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Common] run function 1_fishing_battle:adv_reward/get_catch_item/notice/1_common
+        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Common] run function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/1_common
     ## High-Grade
-        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_High-Grade] run function 1_fishing_battle:adv_reward/get_catch_item/notice/2_high_grade
+        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_High-Grade] run function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/2_high_grade
     ## Different
-        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Different] run function 1_fishing_battle:adv_reward/get_catch_item/notice/3_different
+        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Different] run function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/3_different
     ## Treasure
-        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Treasure] run function 1_fishing_battle:adv_reward/get_catch_item/notice/4_treasure
+        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Treasure] run function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/4_treasure
     ## Miss
-        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Miss] run function 1_fishing_battle:adv_reward/get_catch_item/notice/5_miss
+        execute as @a[tag=XXXTemp_GetCatchItem] at @s if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}},tag=XXXTemp_Rarity_Miss] run function 1_fishing_battle:adv_reward/fishing_rod_hooked/notice/5_miss
 
 # 釣ったアイテムのcustom_dataを削除
     execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"PNCT":{"1FSBT":{"CatchItem":{"Fishing_Hooked":true}}}}}}}] run data remove entity @s Item.components.minecraft:custom_data.PNCT.1FSBT.CatchItem.Fishing_Hooked
