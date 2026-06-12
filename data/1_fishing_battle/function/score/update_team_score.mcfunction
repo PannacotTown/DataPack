@@ -31,4 +31,4 @@
         execute if entity @s[team=1FSBT.Player.Team.Purple] unless score @s 1FSBT.Player.Score < $PNCT.1FSBT.Score.Total.Purple 1FSBT.Player.Score run scoreboard players operation @s 1FSBT.Player.Score = $PNCT.1FSBT.Score.Total.Purple 1FSBT.Player.Score
 
 
-#####マルチプレイ時テスト必須
+#**マルチプレイ時テスト必須

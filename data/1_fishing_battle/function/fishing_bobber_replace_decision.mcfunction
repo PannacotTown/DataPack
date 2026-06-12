@@ -21,4 +21,4 @@
 # 判定
     execute as @e[type=fishing_bobber] if score @s PNCT.Player.ID = $XXX.Player.ID PNCT.Temp run execute unless score $XXX.Player.RodType PNCT.Temp = $XXX.Fishing_Bobber.RodType PNCT.Temp run kill @s
 
-    
+#**マルチプレイ時テスト必須

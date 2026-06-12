@@ -56,4 +56,4 @@
         execute unless entity @a[tag=PNCT.1FSBT.Player,tag=!XXXTemp_TeamSetted] run execute as @a[tag=PNCT.1FSBT.Player,tag=XXXTemp_TeamSetted] run tag @s remove XXXTemp_TeamSetted
 
 
-#####マルチプレイ時テスト必須
+#**マルチプレイ時テスト必須
