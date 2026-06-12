@@ -9,6 +9,9 @@
 # coreストレージ変更
     data modify storage _pannacotown_:system System.GameEvent set value "FishingBattle"
 
+# advancement
+    advancement grant @a only 1_fishing_battle:
+
 # scoreboard
     scoreboard objectives add 1FSBT.System.GameTimer dummy
     scoreboard objectives add 1FSBT.System.Time.Minute dummy
