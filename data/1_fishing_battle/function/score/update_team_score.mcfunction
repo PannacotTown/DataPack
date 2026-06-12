@@ -2,7 +2,7 @@
 #
 # FishingBattle：チームスコアと個人スコアの操作
 #
-# @within function 1_fishing_battle:_main/game_state/3_play
+# @within function 1_fishing_battle:_main/game_state/3_play/
 
 
 

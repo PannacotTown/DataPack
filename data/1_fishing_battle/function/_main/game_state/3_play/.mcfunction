@@ -1,4 +1,4 @@
-#> 1_fishing_battle:_main/game_state/3_play
+#> 1_fishing_battle:_main/game_state/3_play/
 #
 # FishingBattle：ゲーム中に常時読み込む
 # 
@@ -14,7 +14,7 @@
 
 # モード別処理
     ## スコアアタック
-        execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run function 1_fishing_battle:game_mode/score_attack/play
+        execute if data storage 1_fishing_battle:rule {Rule:{GameMode:"ScoreAttack"}} run function 1_fishing_battle:_main/game_state/3_play/game_mode/score_attack/
     ## タイムアタック
     ## おじガチャ大会
 

@@ -2,7 +2,7 @@
 #
 # FishingBattle：浮きの初期設定
 # 
-# @within function 1_fishing_battle:_main/game_state/3_play
+# @within function 1_fishing_battle:_main/game_state/3_play/
 
 
 
