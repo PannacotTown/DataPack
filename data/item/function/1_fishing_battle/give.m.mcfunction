@@ -4,12 +4,12 @@
 #
 # @private
 
-
-
 #> Temp storage
 # @private
     #define storage xxx_temp_xxx:get_id
     #   ID取得用
+
+    
 
 # storage初期化
     $data modify storage xxx_temp_xxx:get_id ID set value $(ID)
