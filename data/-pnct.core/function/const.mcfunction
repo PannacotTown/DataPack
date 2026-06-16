@@ -1,8 +1,8 @@
-#> __core__:const
+#> -pnct.core:const
 #
-# __core__：定数を設定する
+# -pnct.core：定数を設定する
 #
-# @within function __core__/__main__/__load__
+# @within function -pnct.core/__main__/__load__
 
 
 
