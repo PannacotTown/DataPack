@@ -6,7 +6,8 @@
 
 #> Temp Holder
 # @private
-    #define score_holder $XXX.Player.ID
+    #define score_holder $XXX.GameStart.Countdown
+    #   カウントダウン用タイマーホルダー
 
 
 
