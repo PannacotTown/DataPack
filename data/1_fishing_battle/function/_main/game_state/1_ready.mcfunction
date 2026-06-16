@@ -23,7 +23,7 @@
 
 
 # survival→adventure
-    execute as @a[gamemode=survival] run tellraw @s "suv→adv"
+    execute as @a[gamemode=survival] run tellraw @s [{"text":"┃ ","color":"dark_gray"},{"text":"ゲームモードが ","color":"gray"},{"text":"サバイバル","color":"green"},{"text":" → ","color":"dark_gray"},{"text":"アドベンチャー","color":"gold"},{"text":" に変更されました。","color":"gray"}]
     execute as @a[gamemode=survival] run gamemode adventure @s
 
 # プレイヤータグ
