@@ -2,7 +2,7 @@
 #
 # FishingBattle：ゲーム開始前に常時読み込む
 # 
-# @within function 1_fishing_battle:_main/_tick
+# @within function 1_fishing_battle:_main/-tick
 
 #> Public tag
 # @Public

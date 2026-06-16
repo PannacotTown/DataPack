@@ -2,7 +2,7 @@
 #
 # FishingBattle：ゲーム企画のゲームルール
 #
-# @within function 1_fishing_battle:_main/_load
+# @within function 1_fishing_battle:_main/-load
 
 
 

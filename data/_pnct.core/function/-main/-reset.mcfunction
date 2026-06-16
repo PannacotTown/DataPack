@@ -2,7 +2,7 @@
 #
 # -pnct.core：ゲームリセット用
 #
-# @within function -pnct.core:-main/__load__
+# @within function -pnct.core:-main/-load
 
 
 

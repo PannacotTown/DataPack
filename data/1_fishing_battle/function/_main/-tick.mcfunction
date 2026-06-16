@@ -1,4 +1,4 @@
-#> 1_fishing_battle:_main/_tick
+#> 1_fishing_battle:_main/-tick
 #
 # FishingBattle：ゲームモード中、常時読み込む
 # 

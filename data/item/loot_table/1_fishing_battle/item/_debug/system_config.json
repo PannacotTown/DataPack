@@ -193,13 +193,13 @@
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/function 1_fishing_battle:_main/_load"
+												"command": "/function 1_fishing_battle:_main/-load"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "function 1_fishing_battle:_main/_load"
+														"text": "function 1_fishing_battle:_main/-load"
 													}
 												]
 											}

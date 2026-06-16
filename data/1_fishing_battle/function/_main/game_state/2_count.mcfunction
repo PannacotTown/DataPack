@@ -2,7 +2,7 @@
 #
 # FishingBattle：ゲーム開始前カウントダウンに常時読み込む
 # 
-# @within function 1_fishing_battle:_main/_tick
+# @within function 1_fishing_battle:_main/-tick
 
 #> Temp Holder
 # @private

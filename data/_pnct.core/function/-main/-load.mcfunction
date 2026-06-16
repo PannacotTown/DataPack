@@ -1,4 +1,4 @@
-#> -pnct.core:-main/__load__
+#> -pnct.core:-main/-load
 #
 # -pnct.core：ワールド起動時に読み込む
 #
@@ -12,7 +12,7 @@
     scoreboard objectives add PNCT.Player.ID dummy
 
 # 定数
-    function -pnct.core:const
+    function _pnct.core:const
 
 # storage
     execute unless data storage _pannacotown_:system System run data modify storage _pannacotown_:system System set value {GameEvent:"None",Staff:[]}
@@ -22,4 +22,4 @@
     ## Tempスコア
         scoreboard players reset * PNCT.Temp
     ## function
-        function -pnct.core:-main/_reset
+        function _pnct.core:-main/-reset

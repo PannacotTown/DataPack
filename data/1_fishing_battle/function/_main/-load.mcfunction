@@ -1,4 +1,4 @@
-#> 1_fishing_battle:_main/_load
+#> 1_fishing_battle:_main/-load
 #
 # FishingBattle：ゲームモード変更時に読み込む
 #
