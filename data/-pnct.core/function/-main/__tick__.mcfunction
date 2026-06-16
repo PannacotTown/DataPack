@@ -1,4 +1,4 @@
-#> -pnct.core:__main__/__tick__
+#> -pnct.core:-main/__tick__
 #
 # -pnct.core：ワールド起動中、常時読み込む
 #
@@ -16,4 +16,4 @@
     execute as @e if predicate -pnct.core:-500_void_kill run kill @s
 
 # リセット
-    execute unless entity @a run function -pnct.core:__main__/_reset
+    execute unless entity @a run function -pnct.core:-main/_reset

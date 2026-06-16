@@ -2,7 +2,7 @@
 #
 # -pnct.core：定数を設定する
 #
-# @within function -pnct.core/__main__/__load__
+# @within function -pnct.core/-main/__load__
 
 
 

@@ -1,8 +1,8 @@
-#> -pnct.core:__main__/_reset
+#> -pnct.core:-main/_reset
 #
 # -pnct.core：ゲームリセット用
 #
-# @within function -pnct.core:__main__/__load__
+# @within function -pnct.core:-main/__load__
 
 
 
