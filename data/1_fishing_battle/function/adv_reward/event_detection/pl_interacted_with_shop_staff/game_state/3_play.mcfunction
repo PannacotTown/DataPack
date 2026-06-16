@@ -30,10 +30,11 @@
             #### 計算
                 execute if score @s 1FSBT.Player.Score >= $XXX.Shop_Price PNCT.Temp run scoreboard players operation @s 1FSBT.Player.Score -= $XXX.Shop_Price PNCT.Temp
             #### 通知
-                # execute at @s run playsound ambient.basalt_deltas.additions voice @s ~ ~ ~ 1.0 1.0
+                execute at @s run playsound minecraft:entity.villager.yes voice MVrasame ~ ~ ~ 1.0 1.0
         ### 失敗
             #### 通知
                 execute if score @s 1FSBT.Player.Score < $XXX.Shop_Price PNCT.Temp run tellraw @s ""
+                execute if score @s 1FSBT.Player.Score < $XXX.Shop_Price PNCT.Temp run execute at @s run playsound minecraft:entity.villager.trade voice @s ~ ~ ~ 1.0 1.0
         ### debug msg
             tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"購入"}]}
 
