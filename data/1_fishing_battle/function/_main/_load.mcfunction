@@ -93,4 +93,4 @@
 
 # 通知
     ## debug msg
-    tellraw MVrasame {translate:"*debug* %s",with:[{text:"TPF"}]}
+        tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"TPF"},{"text":"ロード完了"}]}

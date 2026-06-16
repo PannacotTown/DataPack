@@ -1,6 +1,6 @@
-#> 1_fishing_battle:adv_reward/event_detection/pl_interacted_with_shop_staff/
+#> 1_fishing_battle:adv_reward/event_detection/pl_interacted_with_shop_staff/game_state/1_ready
 #
-# FishingBattle：advacement報酬/村人を右クリックした時
+# FishingBattle：advacement報酬/村人を右クリック、ゲーム開始前
 # 
 # @within advancement 1_fishing_battle:pl_interacted_with_shop_staff
 
@@ -23,4 +23,4 @@
 
 
 # degub msg
-    tellraw MVrasame {translate:"*debug* %s",with:[{text:"talk"}]}
+    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"会話"}]}

@@ -65,4 +65,4 @@
     tag @a[tag=XXXTemp_GetCatchItem] remove XXXTemp_GetCatchItem
 
 # debug msg
-    tellraw MVrasame {translate:"*debug* %s",with:[{text:"handling_catch_item"}]}
+    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"FishingRod"},{"text":"釣り上げアイテム処理"}]}

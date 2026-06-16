@@ -35,7 +35,7 @@
             #### 通知
                 execute if score @s 1FSBT.Player.Score < $XXX.Shop_Price PNCT.Temp run tellraw @s ""
         ### debug msg
-            tellraw MVrasame {translate:"*debug* %s %s",with:[{text:"buy"},{score:{name:"$XXX.Shop_Price",objective:"PNCT.Temp"}}]}
+            tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"購入"}]}
 
 # Temp削除
     scoreboard players reset $XXX.Shop_Price PNCT.Temp

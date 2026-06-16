@@ -13,7 +13,8 @@
         execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run data modify storage 1_fishing_battle:system System.GameState set value "Finish"
 
 # debug msg
-    execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run tellraw MVrasame {translate:"*debug* %s",with:[{text:"Finish"}]}
+    execute if score $PNCT.1FSBT.System 1FSBT.System.GameTimer matches 0 run tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Game"},{"text":"終了"}]}
+    
 
 # 制限時間
     ## 表示

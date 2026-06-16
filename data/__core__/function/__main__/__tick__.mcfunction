@@ -12,7 +12,7 @@
 
 # voidkill
     # debug msg
-        execute as @e if predicate __core__:-500_void_kill run tellraw MVrasame {translate:"*debug* %s %s",with:[{text:"kill"},{selector:"@s"}]}
+        execute as @e if predicate __core__:-500_void_kill run tellraw @a {"translate":"[DEBUG/%s] %s","with":[{selector:"@s"},{"text":"VoidKill"}]}
     execute as @e if predicate __core__:-500_void_kill run kill @s
 
 # リセット
