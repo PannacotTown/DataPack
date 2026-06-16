@@ -211,26 +211,26 @@
 											"text": "\n"
 										},
 										{
-											"text": "◯企画リセット",
+											"text": "◯企画終了",
 											"color": "black"
 										},
 										{
 											"text": "\n"
 										},
 										{
-											"text": "リセットする",
+											"text": "終了する",
 											"bold": true,
 											"underlined": true,
 											"color": "red",
 											"click_event": {
 												"action": "run_command",
-												"command": "/function 1_fishing_battle:_main/reset"
+												"command": "/function 1_fishing_battle:_main/uninstall"
 											},
 											"hover_event": {
 												"action": "show_text",
 												"value": [
 													{
-														"text": "function 1_fishing_battle:_main/reset"
+														"text": "function 1_fishing_battle:_main/uninstall"
 													}
 												]
 											}

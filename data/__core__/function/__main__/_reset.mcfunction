@@ -7,4 +7,4 @@
 
 
 # TreasurePondFishing
-    function 1_fishing_battle:_main/reset
+    function 1_fishing_battle:_main/uninstall

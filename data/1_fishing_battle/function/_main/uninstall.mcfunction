@@ -20,6 +20,8 @@
     scoreboard objectives remove 1FSBT.Player.Achievement_Reward
     scoreboard objectives remove 1FSBT.Player.Used.Fishing_Rod
 
+    scoreboard players reset * PNCT.Temp
+
 # storage
     data remove storage 1_fishing_battle:system System
     data remove storage 1_fishing_battle:rule Rule
