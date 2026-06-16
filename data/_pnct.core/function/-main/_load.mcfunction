@@ -1,4 +1,4 @@
-#> -pnct.core:__main__/__load__
+#> -pnct.core:-main/__load__
 #
 # -pnct.core：ワールド起動時に読み込む
 #
@@ -22,4 +22,4 @@
     ## Tempスコア
         scoreboard players reset * PNCT.Temp
     ## function
-        function -pnct.core:__main__/_reset
+        function -pnct.core:-main/_reset
