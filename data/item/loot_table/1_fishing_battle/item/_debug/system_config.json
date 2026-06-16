@@ -41,7 +41,7 @@
 							"components": {
 								"minecraft:custom_data": {
 									"PNCT": {
-										"_Debug": {},
+										".Debug": true,
 										"1FSBT": {
 											"ID": 0.01
 										}

@@ -13,9 +13,9 @@
 # 釣果アイテムを削除
     ## 手持ち
         ### 釣果アイテム
-            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:cod[custom_data={"PNCT":{"1FSBT":{"CatchItem":{}}}}]
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a at @s run clear @s minecraft:cod[custom_data~{PNCT:{1FSBT:{CatchItem:{}}}},!custom_data~{PNCT:{.Debug:true}}]
         ### 釣竿
-            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a[tag=PNCT.1FSBT.Player] at @s run clear @s minecraft:fishing_rod[custom_data={"PNCT":{"1FSBT":{"FishingRod":{}}}}]
+            execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run execute as @a at @s run clear @s minecraft:fishing_rod[custom_data~{PNCT:{1FSBT:{FishingRod:{}}}},!custom_data~{PNCT:{.Debug:true}}]
         ### 実績トロフィー
     ## ドロップ
         ### 釣果アイテム
