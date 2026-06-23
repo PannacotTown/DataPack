@@ -38,3 +38,6 @@
 
 # tag
     tag @a remove PNCT.1FSBT.Player
+
+# title
+    title @a reset
