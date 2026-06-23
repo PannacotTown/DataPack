@@ -36,7 +36,7 @@
                 execute if score @s 1FSBT.Player.Score < $XXX.Shop_Price PNCT.Temp run tellraw @s ""
                 execute if score @s 1FSBT.Player.Score < $XXX.Shop_Price PNCT.Temp run execute at @s run playsound minecraft:entity.villager.trade voice @s ~ ~ ~ 1.0 1.0
         ### debug msg
-            tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"購入"}]}
+            tellraw @a[tag=PNCT.Debug] "[DEBUG/Shop] 購入"
 
 # Temp削除
     scoreboard players reset $XXX.Shop_Price PNCT.Temp

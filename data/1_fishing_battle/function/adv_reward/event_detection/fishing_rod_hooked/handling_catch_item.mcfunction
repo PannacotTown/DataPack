@@ -65,4 +65,4 @@
     tag @a[tag=XXXTemp_GetCatchItem] remove XXXTemp_GetCatchItem
 
 # debug msg
-    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"FishingRod"},{"text":"釣り上げアイテム処理"}]}
+    tellraw @a[tag=PNCT.Debug] "[DEBUG/FishingRod] 釣り上げアイテム処理"

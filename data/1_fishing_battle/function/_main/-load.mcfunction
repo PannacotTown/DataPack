@@ -93,4 +93,4 @@
 
 # 通知
     ## debug msg
-        tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"TPF"},{"text":"ロード完了"}]}
+        tellraw @a[tag=PNCT.Debug] "[DEBUG/TPF] ロード完了"

@@ -23,4 +23,4 @@
 
 
 # degub msg
-    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"会話"}]}
+    tellraw @a[tag=PNCT.Debug] "[DEBUG/Shop] 会話"

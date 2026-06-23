@@ -7,7 +7,7 @@
 
 
 # debug msg
-    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"Shop"},{"text":"村人を右クリック"}]}
+    tellraw @a[tag=PNCT.Debug] "[DEBUG/Shop] 村人を右クリック"
 
 # advancementを削除
     advancement revoke @s only 1_fishing_battle:event_detection/pl_interacted_with_shop_staff

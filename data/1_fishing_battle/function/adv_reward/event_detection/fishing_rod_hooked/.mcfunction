@@ -24,4 +24,4 @@
     schedule function 1_fishing_battle:adv_reward/event_detection/fishing_rod_hooked/handling_catch_item 0.6t
 
 # debug msg
-    tellraw @a {"translate":"[DEBUG/%s] %s","with":[{"text":"FishingRod"},{"text":"釣り上げ判定"}]}
+    tellraw @a[tag=PNCT.Debug] "[DEBUG/FishingRod] 釣り上げ判定"
