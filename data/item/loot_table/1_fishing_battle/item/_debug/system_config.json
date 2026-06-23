@@ -12,7 +12,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "XXX_debug_system_config_XXX",
+								"text": "XXX_debug_system_config_fsbt_XXX",
 								"color": "dark_blue",
 								"italic": false,
 								"shadow_color": 0
