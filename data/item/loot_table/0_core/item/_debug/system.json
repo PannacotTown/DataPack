@@ -1,0 +1,268 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:written_book",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "XXX_debug_system_XXX",
+								"color": "dark_blue",
+								"italic": false,
+								"shadow_color": 0
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								" ",
+								{
+									"text": "※このアイテムはデバッグ用です。通常のプレイでは入手できません。※",
+									"color": "yellow",
+									"italic": false
+								},
+								{
+									"text": "コアシステムを変更する本",
+									"color": "white",
+									"italic": false
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"PNCT": {
+										".Debug": true,
+										"Core": {
+											"ID": 0.01
+										}
+									}
+								}
+							}
+						},
+						{
+							"function": "minecraft:set_written_book_pages",
+							"pages": [
+								{
+									"raw": [
+										"",
+										{
+											"text": "⚠取り扱い注意⚠",
+											"bold": true,
+											"color": "dark_red"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "※これはコアシステムを直接操作する本です。普段の企画運行には必要ありません。",
+											"bold": true,
+											"color": "dark_red"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "むやみに操作すると、ワールドが崩壊する恐れがあります。",
+											"bold": true,
+											"color": "dark_red"
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
+											"text": "◯目次",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "タグ操作",
+											"bold": true,
+											"underlined": true,
+											"color": "blue",
+											"click_event": {
+												"action": "change_page",
+												"page": 3
+											}
+										},
+										{
+											"text": "\n"
+										}
+									]
+								},
+								{
+									"raw": [
+										"",
+										{
+											"text": "◯Staffタグ付与",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身に付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s add PNCT.Staff"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s add PNCT.Staff"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身のタグを削除する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s remove PNCT.Staff"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s remove PNCT.Staff"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "周囲1マスのプレイヤーに付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @a[distance=..1] add PNCT.Staff"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @a[distance=..1] add PNCT.Staff"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "周囲1マスのプレイヤーのタグを削除する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @a[distance=..1] remove PNCT.Staff"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @a[distance=..1] remove PNCT.Staff"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "◯Debugタグ付与",
+											"color": "black"
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身に付与する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s add PNCT.Debug"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s add PNCT.Debug"
+													}
+												]
+											}
+										},
+										{
+											"text": "\n"
+										},
+										{
+											"text": "自身のタグを削除する",
+											"bold": true,
+											"underlined": true,
+											"color": "red",
+											"click_event": {
+												"action": "run_command",
+												"command": "/tag @s remove PNCT.Debug"
+											},
+											"hover_event": {
+												"action": "show_text",
+												"value": [
+													{
+														"text": "tag @s remove PNCT.Debug"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"mode": "replace_all"
+						}
+					]
+				}
+			]
+		}
+	]
+}
