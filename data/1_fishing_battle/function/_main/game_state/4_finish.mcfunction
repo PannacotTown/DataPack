@@ -15,6 +15,8 @@
     execute unless score $XXX.GameFinish.Progress_Timer PNCT.Temp = $XXX.GameFinish.Progress_Timer PNCT.Temp run scoreboard players set $XXX.GameFinish.Progress_Timer PNCT.Temp 420
 
 # ランキング
+    ## 作成
+        execute if score $XXX.GameFinish.Progress_Timer PNCT.Temp matches 420 run function 1_fishing_battle:ranking/solo/score_attack/create
     ## 更新
         #execute if score $XXX.GameFinish.Progress_Timer PNCT.Temp matches 420 run function 1_fishing_battle:ranking/solo/score_attack/update
     ## 発表
