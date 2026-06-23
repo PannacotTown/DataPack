@@ -14,7 +14,8 @@
 							"name": {
 								"text": "XXX_debug_fishing_rod_XXX",
                                 "color": "dark_blue",
-								"italic": false
+								"italic": false,
+								"shadow_color": 0
 							}
 						},
 						{
