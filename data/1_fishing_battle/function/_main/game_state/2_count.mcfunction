@@ -47,23 +47,19 @@
         execute unless score $XXX.GameStart.Countdown PNCT.Temp = $XXX.GameStart.Countdown PNCT.Temp run scoreboard players set $XXX.GameStart.Countdown PNCT.Temp 200
     ## 通知
         ### 5秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a times 0 18 0
+            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a times 0 20 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 100 run title @a title {"text":"5","color":"red","bold":true}
         ### 4秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 80 run title @a title {"text":"4","color":"gold","bold":true}
         ### 3秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 60 run title @a title {"text":"3","color":"yellow","bold":true}
         ### 2秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 40 run title @a title {"text":"2","color":"green","bold":true}
         ### 1秒前
-            execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a times 0 18 0
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a subtitle {"text":"ゲーム開始まで","color":"gray"}
             execute if score $XXX.GameStart.Countdown PNCT.Temp matches 20 run title @a title {"text":"1","color":"light_purple","bold":true}
     ## ゲーム開始
