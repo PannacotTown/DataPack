@@ -83,11 +83,11 @@
         ### 入れ食い釣竿
             summon villager 3.5 0 18.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[-90F,0F],CustomName:{"color":"aqua","italic":false,"text":"入れ食い釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Lure",Price:0}}}}}
         ### リッチ釣竿
-            summon villager 7.5 0 15.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[0F,0F],CustomName:{"color":"light_purple","italic":false,"text":"リッチ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Rich",Price:0}}}}}
+            summon villager 5.5 0 15.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[0F,0F],CustomName:{"color":"light_purple","italic":false,"text":"リッチ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Rich",Price:0}}}}}
         ### 博打釣竿
-            summon villager 11.5 0 15.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[0F,0F],CustomName:{"color":"light_purple","italic":false,"text":"博打釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Gambling",Price:0}}}}}
+            summon villager 7.5 0 15.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[0F,0F],CustomName:{"color":"light_purple","italic":false,"text":"博打釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Gambling",Price:0}}}}}
         ### おじガチャ釣竿
-            summon villager 14.5 0 17.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[90F,0F],CustomName:{"color":"gold","italic":false,"text":"おじガチャ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot",Price:0}}}}}
+            summon villager 11.5 0 15.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[0F,0F],CustomName:{"color":"gold","italic":false,"text":"おじガチャ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot",Price:0}}}}}
         ### 10連おじガチャ釣竿
             summon villager 14.5 0 18.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[90F,0F],CustomName:{"color":"gold","italic":false,"text":"10連おじガチャ釣竿"},data:{PNCT:{1FSBT:{Shop:{FishingRod:"Slot-10",Price:0}}}}}
 
