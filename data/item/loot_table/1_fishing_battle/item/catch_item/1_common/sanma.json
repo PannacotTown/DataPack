@@ -41,7 +41,7 @@
 							"components": {
 								"minecraft:custom_model_data": {
 									"strings": [
-										"FishingBattle"
+										"CatchItem"
 									],
 									"floats": [
 										6
