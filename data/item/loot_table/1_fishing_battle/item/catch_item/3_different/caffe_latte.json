@@ -39,7 +39,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "1.fishing_battle:catch_item/",
+								"minecraft:item_model": "1.fishing_battle:catch_item",
 								"minecraft:custom_model_data": {
 									"strings": [
 										"CatchItem"
