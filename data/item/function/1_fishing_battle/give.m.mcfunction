@@ -50,7 +50,7 @@
         execute if data storage xxx_temp_xxx:get_id {ID:29} run loot give @s loot item:1_fishing_battle/item/catch_item/3_different/yota_chiki
         execute if data storage xxx_temp_xxx:get_id {ID:30} run loot give @s loot item:1_fishing_battle/item/catch_item/3_different/koimoyou
 
-        execute if data storage xxx_temp_xxx:get_id {ID:31} run loot give @s loot item:1_fishing_battle/item/catch_item/4_treasure/asuneri
+        execute if data storage xxx_temp_xxx:get_id {ID:31} run loot give @s loot item:1_fishing_battle/item/catch_item/4_treasure/asuneli
         execute if data storage xxx_temp_xxx:get_id {ID:32} run loot give @s loot item:1_fishing_battle/item/catch_item/4_treasure/yotan_cloth
         execute if data storage xxx_temp_xxx:get_id {ID:33} run loot give @s loot item:1_fishing_battle/item/catch_item/4_treasure/green_note
         execute if data storage xxx_temp_xxx:get_id {ID:34} run loot give @s loot item:1_fishing_battle/item/catch_item/4_treasure/shark_peel
@@ -62,5 +62,6 @@
     execute if data storage xxx_temp_xxx:get_id {ID:0.01} if entity @s[tag=PNCT.Staff] run loot give @s loot item:1_fishing_battle/item/_debug/system_config
     execute if data storage xxx_temp_xxx:get_id {ID:0.02} if entity @s[tag=PNCT.Staff] run loot give @s loot item:1_fishing_battle/item/_debug/fishing_rod
 
-# scoreboard削除
+# Temp削除
     scoreboard players reset $XXX.Item.ID PNCT.Temp
+    data remove storage xxx_temp_xxx:get_id ID
